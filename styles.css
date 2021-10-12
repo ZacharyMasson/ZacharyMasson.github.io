@@ -9,6 +9,15 @@ img.cv {
     height:187px;
 }
 
+img.hierauj {
+    border: 5px solid rgb(44, 110, 21);
+    width: 300px;
+}
+
+a {
+    color: rgb(44, 110, 21);
+}
+
 section {
     background-color: lightgrey;
  
