@@ -4,39 +4,88 @@
 <title> Messin Around </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css"
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <header>
+    <!-- the header and the navigation bar are the same as the main(index) page.-->
+    <header id="title">
+        <!--*****First image. 1/5-->
         <img class="cv" src="images/PicCV.png" alt="ProfilePicture">
-        <h1>Zachary Masson</h1>
-        
+        <h1 class="title">Zachary Masson</h1>
     </header>
-
+    <!-- the only change is the active class changes to the misc page-->
     <nav>
         <ul>
             <li><a href="index.html">Main</a></li>
-            <li><a href="Misc.html">Misc</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-          </ul>
+            <li><a class="active" href="Misc.html">Misc</a></li>
+        </ul>
     </nav>
-    
-    <section>
-        <h2>Montreal Then and Now</h2>
-        <p>Montreal Then and Now is a personal project that began when I discovered a Montreal Gazette photographer and journalist named Bryan Demchinsky. He published a book in 1985 called Montreal Then and Now/ Hier et aujourd'hui where photos of the city as it was in the 80s were compared to the same location as it was 100 or more years back.</p>
-        <img class = hierauj src="images/americanpreschurch1865.png">
-        <img class = hierauj src="images/amerpreschurch2021.png">
-        <img class = hierauj src="images/plaxeroyale1886.png">
-        <img class = hierauj src="images/placeroyale2021.png">
-
+    <!--start of a new section with a new id for the Misc section
+    has the same styling to maintain consistency between the pages-->
+    <section id="misc">
+        <h2 class="sectionTitle">Montreal Then and Now</h2>
+        <p class ="labdesc">Montreal Then and Now is a personal project that began when I discovered a Montreal Gazette photographer and journalist named Bryan Demchinsky. He published a book in 1985 called Montreal Then and Now/ Hier et Aujourd'hui where photos of the city as it was in the 80s were compared to the same location as it was 100 or more years back.</p>
+        <p class = "labdesc"> I took the locations from the book and visited them in March/ April 2021 to retake the photos and use them for an interactive web map. This personal project is very much a work in progress and is not associated with the original author of the book. Click any of the images to open the map and explore the rough draft!</p>
+        <!--I decided to keep the same classes (above) as previous page to keep things simple-->
+        <!--*****Table-->
+        <table>
+            <!--first row-->
+            <tr>
+                <!--first item in the row
+                class of hieraujDesc-->
+                <td class = "hieraujDesc">
+                    <!-- styled this p tag as a 'sub title' within the table-->
+                    <p class = "location">American Presbyterian Church 1865</p>
+                    <!-- this contians the actual desctiprion under the subtitle with the smallest text-->
+                    <p class = "mtldesc">Now a Scotiabank, the American Presbysterian Church formed in 1823 when members of St. Andrews Church of Scotland formed their own congregation.</p>
+                </td>
+                <!--second item in the row-->
+                <td>
+                    <!--*****Second Image 2/5
+                    I made it a link to the interactive map, this link should not count in the assignment 
+                    as its to my own website (though not this website...)-->
+                    <a href=https://zach10028.github.io/zachmaps/ target = "_blank">
+                        <!--actual second image-->
+                        <img class = "hierauj" src="images/americanpreschurch1865.png" alt="American Presbyterian Church 1865"></a>
+                    <!--***** Third Image 3/5. -->
+                    <a href=https://zach10028.github.io/zachmaps/ target = "_blank">
+                        <img class = "hierauj" src="images/amerpreschurch2021.png" alt="American Presbyterian Church 2021"></a>
+                </td>
+                <!-- end of second item-->
+            </tr>
+            <!--end of first row
+            start of second row-->
+            <tr>
+                <!-- first item in second row
+                same classes as before-->
+                <td  class = "hieraujDesc">
+                    <p class="location">Place Royale 1886</p>
+                    <p class="mtldesc">In the older image you can see some men in boats in the middle of the road. In 1886 and 1887 the St Lawrence flooded the city, the streets of Montreal were under over 1 meter of water.</p>
+                </td>
+                <!--second item in the second row-->
+                <td>
+                    <!--*****Fourth Image. 4/5, as a link-->
+                    <a href=https://zach10028.github.io/zachmaps/ target = "_blank">
+                        <img class = "hierauj" src="images/plaxeroyale1886.png" alt="Place Royale 1886"></a>
+                    <!--***** Fifth image. 5/5, as a link-->
+                    <a href=https://zach10028.github.io/zachmaps/ target = "_blank">
+                        <img class = "hierauj" src="images/placeroyale2021.png" alt="Place Royale 2021"></a>
+                </td>
+                <!--end of second item in second row-->
+            </tr>
+            <!-- end of second row-->
+        </table>
+        <!-- this p tag serves as a sources statement with links to the book as well as the original collection-->
+        <p class = "sources">Photos scanned from<a href="https://www.amazon.ca/Montreal-Then-Now-Photographic-aujourdhui/dp/0969231504" target = "_blank"> this book</a>, and originally sourced from <a href="http://collections.musee-mccord.qc.ca/scripts/explore.php?Lang=1&tableid=4&elementid=00016__true" target = "_blank">The Notman Photographic Archives</a></p>
     </section>
-    
+    <!-- end of the misc section-->
 
-
+    <!-- same footer as the main page-->
+    <footer >
+        <p class="footerText">Made by Zachary Masson</p>
+        <p class="footerText2">zachary.masson@flemingcollege.ca</p>
+    </footer>
 </body>
-
-
 </html>
 
