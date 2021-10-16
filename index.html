@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Messin Around </title>
+<title> Main Page </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css"
+<!-- Link to the css document used to style the web page-->
+<link rel="stylesheet" href="styles.css">
 </head>
-
+<!-- Start of the actual webpage-->
 <body>
+    <!--Header with CV image, relative path to the image file, image with cv classt-->
+        <!--h1 serving as main title, class = title (see css)-->
     <header>
-        <img class="cv" src="images/PicCV.png" alt="ProfilePicture">
-        <h1>Zachary Masson</h1>
+        <!--***** the first image 1/5-->
+        <img class="cv" src="../PersonalWebPage/images/PicCV.png" alt="ProfilePicture">
+        <h1 class="title">Zachary Masson</h1>
     </header>
 
+    <!--*****Navigation bar-->
+    <!-- using ul to create unordered list and then li to create the list items-->
     <nav>
         <ul>
-            <li><a href="index.html">Main</a></li>
+            <!--links to the two pages, main mage (index.html) and the misc page. -->
+            <!--class active was created to show which page the user is on-->
+            <li><a class="active" href="index.html">Main</a></li>
             <li><a href="Misc.html">Misc</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-          </ul>
+        </ul>
     </nav>
     
-    <section>
-        <h2>School</h2>
-        <h3>BA Human Environment at Concordia University</h3>
-        <p>While at Concordia I studied climate science, focusing on human geography and plant biology. </p>
+    <!--start of the first section 'school'-->
+    <section id ="school">
+        <!-- h2 tag with class sectionTitle largest font-->
+        <h2 class="sectionTitle">School</h2>
+        <!--h3 tag with class sectionSubTitle, this will be used more for the second section
+        as this section only has one subtitle-->
+        <h3 class="sectionSubTitle">BA Human Environment at Concordia University</h3>
+        <!--h5 tag, h4 is used in the subsequent section, with class sectionYears, 
+            italicizes and lighter than ther rest of the text-->
+        <h5 class="sectionYears">2016-2020</h5>
+        <!--actual text of the section in a p tag with class labdesc-->
+        <p class="labdesc">While at Concordia I studied geography focusing on climate science, big data and the potential role of Plant Image Analysis applications.</p>
     </section>
 
-    <section>
-        <h2>Academic Work</h2>
-        <h3>Research Assistant at CHAPEL (Climate Hydrology and Paleoenvironments Lab)</h3>
-        <h4>2018-2020</h4>
-        <p>Supervised by Prof. Jeannine St-Jacques, I had the opportunity to collect pollen samples at Mount Orford (Orford Quebec).</p>
-        <a href="https://www.concordia.ca/artsci/geography-planning-environment/research/labs/chapel.html">For more informaiton on CHAPEL click here</a>
-
-        <h3>PerosLab at Bishop's University</h3>
-        <h4>2018-2020</h4>
-        <h4>Cueva Margarita</h4>
-        <p>Supervised by Prof. Matthew Peros, I worked on a paleoenvironmental reconstruction using pollen and seeds taken from a sediment core. The core was taken from a subaquatic karst cave named Cueva Margarita where the remains of a giant sloth and a extinct arboreal sloth were found. Based on the presence of the sloth remains, the seeds, and the results of environmental reconstrution it was concluded that the sloths were likely in search of food and then were trapped in the cave.</p>
-        <p>The project was in part funded by the National Geographic:<a href="https://www.youtube.com/watch?v=3Azj0bHXQcY"> To watch the diving team collect the bones click here</a></p>
-
-
-
-        <h4>Las Llandas</h4>
-        <p>This work was a continuation of my previous research for PerosLab. We wanted to see if recovered coprolites from the same species of ground sloth discovered in Cueva Margarita would show evidence of the types of plants the species ate, as well as do an environmental reconstruction based on the pollen, seeds, or plant macrofossils found. </p>
-        <p>The coprolites sampled are believed to be dated to the holocene-pleistocene boundary (around 10 000 BP).</p>
-
+    <!--start of second section 'academic work', exact same styling as previous section
+    but the use of ID is for elements that appear once (these sections have different information so the use
+    of seperate IDs is appropriate)-->
+    <section id="acadWork">
+        <!-- the headings have the same styling as the previous section-->
+        <h2 class="sectionTitle">Academic Work</h2>
+        <h3 class ="sectionSubTitle">Research Assistant at CHAPEL (Climate Hydrology and Paleoenvironments Lab)</h3>
+        <h5 class="sectionYears">2018-2020</h5>
+        <!--***** this p tag contains the first link to an external page (CHAPEL)-->
+        <p class="labdesc">Supervised by Prof. Jeannine St-Jacques, I had the opportunity to collect pollen samples at Mount Orford (Orford Quebec). I held this position concurrently with my other research position at Bishop's University. While at CHAPEL I worked on a number of environmental proxies used to investigate paleoenvironments, though I primarily focused on pollen and seed analysis.<a class="labwork" href="https://www.concordia.ca/artsci/geography-planning-environment/research/labs/chapel.html" target = "_blank"> For more informaiton on CHAPEL click here</a></p>
+        <!-- another subtitle-->
+        <h3 class ="sectionSubTitle">Research Assistant PerosLab at Bishop's University</h3>
+        <h5 class="sectionYears">2018-2020</h5>
+        <!--the h4 tag is used here for another set of subtitles  for the 
+            projects I worked on but these subtitles are smaller -->
+        <!-- start of project one-->
+        <h4 class ="projects">Cueva Margarita</h4>
+        <!--***** this p tag contains the second link to an external page (Youtube; National Geographic Sloth video)-->
+        <p class="labdesc">Supervised by Prof. Matthew Peros, I worked on a paleoenvironmental reconstruction using pollen and seeds taken from a sediment core. The core was taken from a subaquatic karst cave named Cueva Margarita where the remains of a giant sloth and a extinct arboreal sloth were found. Based on the presence of the sloth remains, the seeds, and the results of environmental reconstrution it was concluded that the sloths were likely in search of food and then were trapped in the cave. The project was in part funded by the National Geographic:<a class="labwork" href="https://www.youtube.com/watch?v=3Azj0bHXQcY" target = "_blank"> To watch the diving team collect the bones click here</a></p>
+        <!-- project two-->
+        <h4 class ="projects">Las Llandas</h4>
+        <p class="labdesc">This work was a continuation of my previous research for PerosLab. We wanted to see if recovered coprolites from the same species of ground sloth discovered in Cueva Margarita would show evidence of the types of plants the species ate, as well as do an environmental reconstruction based on the pollen, seeds, or plant macrofossils found. The coprolites sampled are believed to be dated to the holocene-pleistocene boundary (around 10 000 BP).</p>
     </section>
-    
-    <section>
- 
-    </section>
-    
-
+    <!--that ends the sections-->
+    <!--the footer contains contact information and author-->
+    <footer>
+        <!-- two p tags with different classes;
+        the first is plain but the second is italicized. and smaller-->
+        <p class="footerText">Made by Zachary Masson</p>
+        <p class="footerText2">zachary.masson@flemingcollege.ca</p>
+    </footer>
 </body>
-
-
 </html>
 
