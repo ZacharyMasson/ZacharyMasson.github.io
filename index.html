@@ -8,21 +8,24 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <!-- Start of the actual webpage-->
+<!-- NOTE: The items used in this assignment are Links (both pages), 5 Images (both pages), Table (misc page), and Navigation Bar(both pages)-->
 <body>
     <!--Header with CV image, relative path to the image file, image with cv classt-->
         <!--h1 serving as main title, class = title (see css)-->
-    <header>
-        <!--***** the first image 1/5-->
-        <img class="cv" src="images/PicCV.png" alt="ProfilePicture">
+    <header> 
+        <!--***** the first image 1/5, 1/4 items-->
+        <!-- source: https://www.w3schools.com/howto/howto_css_border_image.asp
+        and https://www.w3schools.com/html/html_images.asp-->
+        <img class="cv" src="../PersonalWebPage/images/PicCV.png" alt="ProfilePicture">
         <h1 class="title">Zachary Masson</h1>
     </header>
 
-    <!--*****Navigation bar-->
-    <!-- using ul to create unordered list and then li to create the list items-->
+    <!--*****Navigation bar, 2/4 items-->
+    <!-- source: initially taken from W3 schools https://www.w3schools.com/css/css_navbar_horizontal.asp  See the styles.css document-->
     <nav>
         <ul>
-            <!--links to the two pages, main mage (index.html) and the misc page. -->
-            <!--class active was created to show which page the user is on-->
+            <!--links to the two pages-->
+            <!--class active shows which page the user is on-->
             <li><a class="active" href="index.html">Main</a></li>
             <li><a href="Misc.html">Misc</a></li>
         </ul>
@@ -51,16 +54,18 @@
         <h3 class ="sectionSubTitle">Research Assistant at CHAPEL (Climate Hydrology and Paleoenvironments Lab)</h3>
         <h5 class="sectionYears">2018-2020</h5>
         <!--***** this p tag contains the first link to an external page (CHAPEL)-->
+            <!--Links 3/4 items-->
         <p class="labdesc">Supervised by Prof. Jeannine St-Jacques, I had the opportunity to collect pollen samples at Mount Orford (Orford Quebec). I held this position concurrently with my other research position at Bishop's University. While at CHAPEL I worked on a number of environmental proxies used to investigate paleoenvironments, though I primarily focused on pollen and seed analysis.<a class="labwork" href="https://www.concordia.ca/artsci/geography-planning-environment/research/labs/chapel.html" target = "_blank"> For more informaiton on CHAPEL click here</a></p>
         <!-- another subtitle-->
-        <h3 class ="sectionSubTitle">Research Assistant PerosLab at Bishop's University</h3>
+        <h3 class ="sectionSubTitle2">Research Assistant PerosLab at Bishop's University</h3>
         <h5 class="sectionYears">2018-2020</h5>
         <!--the h4 tag is used here for another set of subtitles  for the 
             projects I worked on but these subtitles are smaller -->
         <!-- start of project one-->
         <h4 class ="projects">Cueva Margarita</h4>
         <!--***** this p tag contains the second link to an external page (Youtube; National Geographic Sloth video)-->
-        <p class="labdesc">Supervised by Prof. Matthew Peros, I worked on a paleoenvironmental reconstruction using pollen and seeds taken from a sediment core. The core was taken from a subaquatic karst cave named Cueva Margarita where the remains of a giant sloth and a extinct arboreal sloth were found. Based on the presence of the sloth remains, the seeds, and the results of environmental reconstrution it was concluded that the sloths were likely in search of food and then were trapped in the cave. The project was in part funded by the National Geographic:<a class="labwork" href="https://www.youtube.com/watch?v=3Azj0bHXQcY" target = "_blank"> To watch the diving team collect the bones click here</a></p>
+        <!-- The encoded link for youtube does allow me to open the afctual page, youtube seems to block encoded addresses. it would be https://www.youtube.com/watch%3Fv%3D3Azj0bHXQcY%26ab%5Fchannel%3DNationalGeographic-->
+        <p class="labdesc">Supervised by Prof. Matthew Peros, I worked on a paleoenvironmental reconstruction using pollen and seeds taken from a sediment core. The core was taken from a subaquatic karst cave named Cueva Margarita where the remains of a giant sloth and a extinct arboreal sloth were found. Based on the presence of the sloth remains, the seeds, and the results of environmental reconstrution it was concluded that the sloths were likely in search of food and then were trapped in the cave. The project was in part funded by the National Geographic:<a class="labwork" href="https://www.youtube.com/watch?v=3Azj0bHXQcY&ab_channel=NationalGeographic" target = "_blank"> To watch the diving team collect the bones click here</a></p>
         <!-- project two-->
         <h4 class ="projects">Las Llandas</h4>
         <p class="labdesc">This work was a continuation of my previous research for PerosLab. We wanted to see if recovered coprolites from the same species of ground sloth discovered in Cueva Margarita would show evidence of the types of plants the species ate, as well as do an environmental reconstruction based on the pollen, seeds, or plant macrofossils found. The coprolites sampled are believed to be dated to the holocene-pleistocene boundary (around 10 000 BP).</p>
@@ -68,8 +73,8 @@
     <!--that ends the sections-->
     <!--the footer contains contact information and author-->
     <footer>
-        <!-- two p tags with different classes;
-        the first is plain but the second is italicized. and smaller-->
+        <!-- Source: https://www.w3schools.com/tags/tag_footer.asp
+        Took the layout for the footer and modified it to fit the style of my page, see styles.css-->
         <p class="footerText">Made by Zachary Masson</p>
         <p class="footerText2">zachary.masson@flemingcollege.ca</p>
     </footer>
