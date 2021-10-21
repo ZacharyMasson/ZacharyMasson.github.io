@@ -1,88 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Messin Around </title>
+<title> Main Page </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Link to the css document used to style the web page-->
 <link rel="stylesheet" href="styles.css">
 </head>
-
+<!-- Start of the actual webpage-->
+<!-- NOTE: The items used in this assignment are Links (both pages), 5 Images (both pages), Table (misc page), and Navigation Bar(both pages)-->
 <body>
-    <!-- the header and the navigation bar are the same as the main(index) page.-->
-    <header id="title">
-        <!--*****First image. 1/5-->
-        <img class="cv" src="images/PicCV.png" alt="ProfilePicture">
+    <!--Header with CV image, relative path to the image file, image with cv classt-->
+        <!--h1 serving as main title, class = title (see css)-->
+    <header> 
+        <!--***** the first image 1/5, 1/4 items-->
+        <!-- source: https://www.w3schools.com/howto/howto_css_border_image.asp
+        and https://www.w3schools.com/html/html_images.asp-->
+        <img class="cv" src="../PersonalWebPage/images/PicCV.png" alt="ProfilePicture">
         <h1 class="title">Zachary Masson</h1>
     </header>
-    <!-- the only change is the active class changes to the misc page-->
+
+    <!--*****Navigation bar, 2/4 items-->
+    <!-- source: initially taken from W3 schools https://www.w3schools.com/css/css_navbar_horizontal.asp  See the styles.css document-->
     <nav>
         <ul>
-            <li><a href="index.html">Main</a></li>
-            <li><a class="active" href="Misc.html">Misc</a></li>
+            <!--links to the two pages-->
+            <!--class active shows which page the user is on-->
+            <li><a class="active" href="index.html">Main</a></li>
+            <li><a href="Misc.html">Misc</a></li>
         </ul>
     </nav>
-    <!--start of a new section with a new id for the Misc section
-    has the same styling to maintain consistency between the pages-->
-    <section id="misc">
-        <h2 class="sectionTitle">Montreal Then and Now</h2>
-        <p class ="labdesc">Montreal Then and Now is a personal project that began when I discovered a Montreal Gazette photographer and journalist named Bryan Demchinsky. He published a book in 1985 called Montreal Then and Now/ Hier et Aujourd'hui where photos of the city as it was in the 80s were compared to the same location as it was 100 or more years back.</p>
-        <p class = "labdesc"> I took the locations from the book and visited them in March/ April 2021 to retake the photos and use them for an interactive web map. This personal project is very much a work in progress and is not associated with the original author of the book. Click any of the images to open the map and explore the rough draft!</p>
-        <!--I decided to keep the same classes (above) as previous page to keep things simple-->
-        <!--*****Table-->
-        <table>
-            <!--first row-->
-            <tr>
-                <!--first item in the row
-                class of hieraujDesc-->
-                <td class = "hieraujDesc">
-                    <!-- styled this p tag as a 'sub title' within the table-->
-                    <p class = "location">American Presbyterian Church 1865</p>
-                    <!-- this contians the actual desctiprion under the subtitle with the smallest text-->
-                    <p class = "mtldesc">Now a Scotiabank, the American Presbysterian Church formed in 1823 when members of St. Andrews Church of Scotland formed their own congregation.</p>
-                </td>
-                <!--second item in the row-->
-                <td>
-                    <!--*****Second Image 2/5
-                    I made it a link to the interactive map, this link should not count in the assignment 
-                    as its to my own website (though not this website...)-->
-                    <a href=https://zach10028.github.io/zachmaps/ target = "_blank">
-                        <!--actual second image-->
-                        <img class = "hierauj" src="images/americanpreschurch1865.png" alt="American Presbyterian Church 1865"></a>
-                    <!--***** Third Image 3/5. -->
-                    <a href=https://zach10028.github.io/zachmaps/ target = "_blank">
-                        <img class = "hierauj" src="images/amerpreschurch2021.png" alt="American Presbyterian Church 2021"></a>
-                </td>
-                <!-- end of second item-->
-            </tr>
-            <!--end of first row
-            start of second row-->
-            <tr>
-                <!-- first item in second row
-                same classes as before-->
-                <td  class = "hieraujDesc">
-                    <p class="location">Place Royale 1886</p>
-                    <p class="mtldesc">In the older image you can see some men in boats in the middle of the road. In 1886 and 1887 the St Lawrence flooded the city, the streets of Montreal were under over 1 meter of water.</p>
-                </td>
-                <!--second item in the second row-->
-                <td>
-                    <!--*****Fourth Image. 4/5, as a link-->
-                    <a href=https://zach10028.github.io/zachmaps/ target = "_blank">
-                        <img class = "hierauj" src="images/plaxeroyale1886.png" alt="Place Royale 1886"></a>
-                    <!--***** Fifth image. 5/5, as a link-->
-                    <a href=https://zach10028.github.io/zachmaps/ target = "_blank">
-                        <img class = "hierauj" src="images/placeroyale2021.png" alt="Place Royale 2021"></a>
-                </td>
-                <!--end of second item in second row-->
-            </tr>
-            <!-- end of second row-->
-        </table>
-        <!-- this p tag serves as a sources statement with links to the book as well as the original collection-->
-        <p class = "sources">Photos scanned from<a href="https://www.amazon.ca/Montreal-Then-Now-Photographic-aujourdhui/dp/0969231504" target = "_blank"> this book</a>, and originally sourced from <a href="http://collections.musee-mccord.qc.ca/scripts/explore.php?Lang=1&tableid=4&elementid=00016__true" target = "_blank">The Notman Photographic Archives</a></p>
+    
+    <!--start of the first section 'school'-->
+    <section id ="school">
+        <!-- h2 tag with class sectionTitle largest font-->
+        <h2 class="sectionTitle">School</h2>
+        <!--h3 tag with class sectionSubTitle, this will be used more for the second section
+        as this section only has one subtitle-->
+        <h3 class="sectionSubTitle">BA Human Environment at Concordia University</h3>
+        <!--h5 tag, h4 is used in the subsequent section, with class sectionYears, 
+            italicizes and lighter than ther rest of the text-->
+        <h5 class="sectionYears">2016-2020</h5>
+        <!--actual text of the section in a p tag with class labdesc-->
+        <p class="labdesc">While at Concordia I studied geography focusing on climate science, big data and the potential role of Plant Image Analysis applications.</p>
     </section>
-    <!-- end of the misc section-->
 
-    <!-- same footer as the main page-->
-    <footer >
+    <!--start of second section 'academic work', exact same styling as previous section
+    but the use of ID is for elements that appear once (these sections have different information so the use
+    of seperate IDs is appropriate)-->
+    <section id="acadWork">
+        <!-- the headings have the same styling as the previous section-->
+        <h2 class="sectionTitle">Academic Work</h2>
+        <h3 class ="sectionSubTitle">Research Assistant at CHAPEL (Climate Hydrology and Paleoenvironments Lab)</h3>
+        <h5 class="sectionYears">2018-2020</h5>
+        <!--***** this p tag contains the first link to an external page (CHAPEL)-->
+            <!--Links 3/4 items-->
+        <p class="labdesc">Supervised by Prof. Jeannine St-Jacques, I had the opportunity to collect pollen samples at Mount Orford (Orford Quebec). I held this position concurrently with my other research position at Bishop's University. While at CHAPEL I worked on a number of environmental proxies used to investigate paleoenvironments, though I primarily focused on pollen and seed analysis.<a class="labwork" href="https://www.concordia.ca/artsci/geography-planning-environment/research/labs/chapel.html" target = "_blank"> For more informaiton on CHAPEL click here</a></p>
+        <!-- another subtitle-->
+        <h3 class ="sectionSubTitle2">Research Assistant PerosLab at Bishop's University</h3>
+        <h5 class="sectionYears">2018-2020</h5>
+        <!--the h4 tag is used here for another set of subtitles  for the 
+            projects I worked on but these subtitles are smaller -->
+        <!-- start of project one-->
+        <h4 class ="projects">Cueva Margarita</h4>
+        <!--***** this p tag contains the second link to an external page (Youtube; National Geographic Sloth video)-->
+        <!-- The encoded link for youtube does allow me to open the afctual page, youtube seems to block encoded addresses. it would be https://www.youtube.com/watch%3Fv%3D3Azj0bHXQcY%26ab%5Fchannel%3DNationalGeographic-->
+        <p class="labdesc">Supervised by Prof. Matthew Peros, I worked on a paleoenvironmental reconstruction using pollen and seeds taken from a sediment core. The core was taken from a subaquatic karst cave named Cueva Margarita where the remains of a giant sloth and a extinct arboreal sloth were found. Based on the presence of the sloth remains, the seeds, and the results of environmental reconstrution it was concluded that the sloths were likely in search of food and then were trapped in the cave. The project was in part funded by the National Geographic:<a class="labwork" href="https://www.youtube.com/watch?v=3Azj0bHXQcY&ab_channel=NationalGeographic" target = "_blank"> To watch the diving team collect the bones click here</a></p>
+        <!-- project two-->
+        <h4 class ="projects">Las Llandas</h4>
+        <p class="labdesc">This work was a continuation of my previous research for PerosLab. We wanted to see if recovered coprolites from the same species of ground sloth discovered in Cueva Margarita would show evidence of the types of plants the species ate, as well as do an environmental reconstruction based on the pollen, seeds, or plant macrofossils found. The coprolites sampled are believed to be dated to the holocene-pleistocene boundary (around 10 000 BP).</p>
+    </section>
+    <!--that ends the sections-->
+    <!--the footer contains contact information and author-->
+    <footer>
+        <!-- Source: https://www.w3schools.com/tags/tag_footer.asp
+        Took the layout for the footer and modified it to fit the style of my page, see styles.css-->
         <p class="footerText">Made by Zachary Masson</p>
         <p class="footerText2">zachary.masson@flemingcollege.ca</p>
     </footer>
